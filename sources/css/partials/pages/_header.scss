@@ -1,0 +1,43 @@
+// HEADER
+.header {
+	a {
+		text-decoration: none;
+	}
+
+	.icon-header-top {
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+
+	.arrow-left {
+		color: $blue-normal;
+		svg {
+			width: 2rem;
+			height: 2rem;
+			transition: 0.5s ease;
+
+			&:hover {
+				transform: translateX(-6px);
+			}
+		}
+	}
+
+	.icon-header {
+		width: 3rem;
+		height: 3rem;
+	}
+
+	.avatar-profile {
+		img {
+			width: 2rem;
+			height: 2rem;
+		}
+	}
+
+	.letter-spacing-ia {
+		text-transform: uppercase;
+		letter-spacing: 8px;
+		font-weight: lighter;
+		margin: 0;
+	}
+}

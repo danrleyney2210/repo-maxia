@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="../../sources/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../sources/css/style-ia.min.css" />
+
+		<script src="../../sources/js/svg-inject.min.js"></script>
+		<title>01 - Roteiro - Niveis</title>
+	</head>
+
+	<body class="bg-suporte">
+		<div class="container">
+			<div class="row">
+				<!-- ======= START-LIMIT =======-->
+				<div class="col-lg-6 col-md-8 mx-auto bg-light">
+					<!-- ======= START-TOP =======-->
+					<section class="pt-4">
+						<!-- ======= START-HEADER =======-->
+						<header class="header">
+							<!-- ======= START-NAV-TOP =======-->
+							<div class="d-flex justify-content-between align-items-center">
+								<a class="d-flex align-items-center text-secondary gap-2" href="#">
+									<img class="icon-header-top" src="../../sources/assets/icons/bootstrap-icons/arrow-left.svg" alt="Voltar" onload="SVGInject(this)" />
+									Voltar
+								</a>
+
+								<a class="d-flex align-items-center text-secondary gap-2" href="#">
+									Agenda
+									<img class="icon-header-top" src="../../sources/assets/icons/bootstrap-icons/calendar-check.svg" alt="Agenda" onload="SVGInject(this)" />
+								</a>
+							</div>
+							<!-- ======= -END-NAV-TOP =======-->
+
+							<!-- ======= START-TITLE-PAG =======-->
+							<div class="d-flex justify-content-center align-items-center flex-column">
+								<img class="icon-header text-secondary mb-2" src="../../sources/assets/icons/bootstrap-icons/clipboard-data.svg" alt="Icone" onload="SVGInject(this)" />
+								<h2 class="text-center">Roteiro de estudo pessoal</h2>
+							</div>
+							<!-- ======= END-TITLE-PAG =======-->
+						</header>
+						<!-- ======= END-HEADER =======-->
+					</section>
+					<!-- ======= END-TOP =======-->
+
+					<hr class="dropdown-divider" />
+
+					<!-- ======= START-LEGEND =======-->
+					<section class="fw-bold">
+						<div class="d-flex justify-content-center align-items-center gap-2 my-3">
+							<p class="text-center m-0">Nível de desempenho provável</p>
+							<!-- ======= START-TOOLTIP =======-->
+							<span data-bs-toggle="tooltip" data-bs-placement="top" title="Texto do tooltip aqui">
+								<img class="text-secondary" src="../../sources/assets/icons/bootstrap-icons/info-circle.svg" alt="" onload="SVGInject(this)" />
+							</span>
+							<!-- ======= END-TOOLTIP =======-->
+						</div>
+
+						<!-- ======= START-LEGEND-CIRCLES =======-->
+						<div class="d-flex align-items-center justify-content-evenly niveis">
+							<div class="d-flex flex-column align-items-center nivel-circle critico">
+								<span>1</span>
+								<p>Crítico</p>
+							</div>
+							<div class="d-flex flex-column align-items-center nivel-circle baixo">
+								<span>2</span>
+								<p>Baixo</p>
+							</div>
+							<div class="d-flex flex-column align-items-center nivel-circle medio">
+								<span>3</span>
+								<p>Médio</p>
+							</div>
+							<div class="d-flex flex-column align-items-center nivel-circle alto">
+								<span>4</span>
+								<p>Alto</p>
+							</div>
+							<div class="d-flex flex-column align-items-center nivel-circle elevado">
+								<span>5</span>
+								<p>Elevado</p>
+							</div>
+						</div>
+						<!-- ======= END-LEGEND-CIRCLES =======-->
+					</section>
+					<!-- ======= END-LEGEND =======-->
+
+					<hr class="dropdown-divider" />
+
+					<!-- ======= START-LIST =======-->
+					<section class="py-3">
+						<div class="card card-ia">
+							<!-- ======= START-LOOP-CARD-EXAMPLE =======-->
+							<a href="#" class="card-body">
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex flex-column">
+										<!-- ======= DISCIPLINA =======-->
+										<h5 class="fw-bold m-0">Disciplina</h5>
+										<!-- ======= ULTIMA-REVISAO =======-->
+										<span class="small text-muted">Ultima revisão: 07/07/2021</span>
+									</div>
+									<!-- ======= NIVEL [critico | baixo | medio | alto | elevado] =======-->
+									<h3 class="nivel critico">
+										<span class="badge rounded px-sm-5 px-4">Nível</span>
+									</h3>
+								</div>
+							</a>
+							<!-- ======= END-LOOP-CARD-EXAMPLE =======-->
+
+							<a href="#" class="card-body">
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex flex-column">
+										<h5 class="fw-bold m-0">Disciplina</h5>
+										<span class="small text-muted">Ultima revisão: 07/07/2021</span>
+									</div>
+									<h3 class="nivel baixo">
+										<span class="badge rounded px-sm-5 px-4">Nível</span>
+									</h3>
+								</div>
+							</a>
+
+							<a href="#" class="card-body">
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex flex-column">
+										<h5 class="fw-bold m-0">Disciplina</h5>
+										<span class="small text-muted">Ultima revisão: 07/07/2021</span>
+									</div>
+									<h3 class="nivel medio">
+										<span class="badge rounded px-sm-5 px-4">Nível</span>
+									</h3>
+								</div>
+							</a>
+
+							<a href="#" class="card-body">
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex flex-column">
+										<h5 class="fw-bold m-0">Disciplina</h5>
+										<span class="small text-muted">Ultima revisão: 07/07/2021</span>
+									</div>
+									<h3 class="nivel alto">
+										<span class="badge rounded px-sm-5 px-4">Nível</span>
+									</h3>
+								</div>
+							</a>
+
+							<a href="#" class="card-body">
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="d-flex flex-column">
+										<h5 class="fw-bold m-0">Disciplina</h5>
+										<span class="small text-muted">Ultima revisão: 07/07/2021</span>
+									</div>
+									<h3 class="nivel elevado">
+										<span class="badge rounded px-sm-5 px-4">Nível</span>
+									</h3>
+								</div>
+							</a>
+						</div>
+					</section>
+					<!-- ======= END-LIST =======-->
+				</div>
+				<!-- ======= END-LIMIT =======-->
+			</div>
+		</div>
+
+		<!-- ======= JS =======-->
+		<script src="../../sources/js/bootstrap.bundle.min.js"></script>
+		<script type="module" src="../../sources/js/script.js"></script>
+		<script>
+			var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+			var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+				return new bootstrap.Tooltip(tooltipTriggerEl);
+			});
+		</script>
+	</body>
+</html>

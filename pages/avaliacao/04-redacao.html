@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="../../sources/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../sources/css/style-ia.min.css" />
+
+		<script src="../../sources/js/svg-inject.min.js"></script>
+		<title>04 - Redação</title>
+	</head>
+	<body class="bg-light">
+	<section class="test-time radius-info bg-info pb-4 position-relative">
+			<!-- ======= START-CHRONOMETER =======-->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 mx-auto">
+				<div class="d-flex justify-content-center align-items-center flex-column py-4">
+					<span class="chronometer-icon">
+						<img src="../../sources/assets/icons/bootstrap-icons/stopwatch.svg" alt="" onload="SVGInject(this)" />
+					</span>
+					<span id="cronometro" class="chronometer-time text-center" data-time="chronometer">...</span>
+				</div>
+				<!-- ======= END-CHRONOMETER =======-->
+
+				<!-- ======= START-COLLAPSE =======-->
+				<div class="collapse" id="collapseExample">
+					<!-- ======= START-PROGESS-BAR =======-->
+					<div class="progress p-1 mb-3 rounded-pill">
+						<div
+							class="progress-bar rounded-pill bg-secondary"
+							role="progressbar"
+							style="width: 15%"
+							aria-valuenow="15"
+							aria-valuemin="0"
+							aria-valuemax="100"
+						></div>
+					</div>
+					<!-- ======= END-PROGESS-BAR =======-->
+
+					<!-- ======= START-CAROUSEL =======-->
+					<div id="carouselQuestions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+						<div class="carousel-inner px-3">
+							<div class="carousel-item active" data-bs-interval="pause">
+								<div class="row">
+									<div class="col-2 d-flex justify-content-center"><div class="question-item done">01</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item done">02</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item done">03</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">04</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">05</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">06</div></div>
+
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+								</div>
+								<div class="row">
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+								</div>
+							</div>
+							<div class="carousel-item" data-bs-interval="pause">
+								<div class="row">
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+								</div>
+								<div class="row">
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+								</div>
+							</div>
+							<div class="carousel-item" data-bs-interval="pause">
+								<div class="row">
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+								</div>
+								<div class="row">
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+									<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-indicators position-static m-0 mt-5">
+							<button
+								type="button"
+								data-bs-target="#carouselQuestions"
+								data-bs-slide-to="0"
+								class="active"
+								aria-current="true"
+								aria-label="Slide 1"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselQuestions"
+								data-bs-slide-to="1"
+								aria-label="Slide 2"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carouselQuestions"
+								data-bs-slide-to="2"
+								aria-label="Slide 3"
+							></button>
+						</div>
+						<button
+							class="carousel-control-prev"
+							type="button"
+							data-bs-target="#carouselQuestions"
+							data-bs-slide="prev"
+						>
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Anterior</span>
+						</button>
+						<button
+							class="carousel-control-next"
+							type="button"
+							data-bs-target="#carouselQuestions"
+							data-bs-slide="next"
+						>
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Próximo</span>
+						</button>
+					</div>
+					<!-- ======= END-CAROUSEL =======-->
+
+					<!-- ======= START-BUTTONS =======-->
+					<div class="row mt-4">
+						<div class="question-buttons d-grid gap-2 col-md-10 mx-auto">
+							<button type="button" class="btn btn-primary btn-maxia btn-sm mb-3">Ir para Avaliação</button>
+							<button type="button" class="btn outline-button-white btn-maxia btn-sm mb-3">Finalizar Redação</button>
+						</div>
+					</div>
+					<!-- ======= END-BUTTONS =======-->
+				</div>
+				<!-- ======= END-COLLAPSE =======-->
+
+				<!-- ======= START-ACTIVE-COLLAPSE =======-->
+				<button class="open-questions position-absolute top-100 start-50 translate-middle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+					<img src="../../sources/assets/icons/bootstrap-icons/chevron-down.svg" alt="" onload="SVGInject(this)" />
+				</button>
+				<!-- ======= END-ACTIVE-COLLAPSE =======-->
+			</div>
+		</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="container pb-3">
+		<div class="row">
+			<div class="col-md-9 mx-auto px-3 pt-5 pb-2 justify-content-center" >
+				<div class="text-center mb-5">
+					<button class="btn outline-secondary btn-maxia">
+						<strong>Proposta de Texto</strong>
+						<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
+							<path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+							<path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+							<path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+						</svg>
+					</button>
+				</div>
+				<h2 class="text-center bold" style="color: #494949;"><strong>Sua redação</strong></h2>
+				
+				<form action="">
+					<textarea class="textarea-ia" name="texto_redacao" id="texto_redacao"  placeholder="Toque aqui para começar a digitar...">
+						
+
+					</textarea>
+				</form>
+
+				<div class="text-center mt-3 mb-2">
+					<span class="text-secondary fw-bold"><span id="num_letras">0</span> caracteres</span> |
+					<span class="text-primary fw-bold"><span id="num_linhas">0</span> linhas</span> |
+					<span class="text-info fw-bold" data-bs-toggle="tooltip" data-bs-placement="top" title="Sempre que for digitado um ponto final (.) seguido de um enter se iniciará um novo parágrafo"><span id="num_paragrafos">0</span> parágrafos [?]</span>
+					
+				</div>
+				
+				<div class="d-grid gap-2 col-md-6 col-10 mx-auto py-2">
+					<button type="button" class="btn btn-secondary btn-maxia mb-3">Finalizar</button>
+				</div>
+		
+			</div>
+		</div>
+	</section>
+
+	<!-- ======= JS =======-->
+	<script src="../../sources/js/bootstrap.bundle.min.js"></script>
+	<script type="module" src="../../sources/js/script.js"></script>
+	<script src="../../sources/js/contadorTxt.js"></script>
+
+	<script>
+		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+			return new bootstrap.Tooltip(tooltipTriggerEl)
+		})
+	</script>
+	</body>
+</html>
+

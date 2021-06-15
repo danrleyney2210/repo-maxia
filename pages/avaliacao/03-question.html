@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="../../sources/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../sources/css/style-ia.min.css" />
+
+		<script src="../../sources/js/svg-inject.min.js"></script>
+		<title>03 - Question</title>
+	</head>
+	<body>
+		<!-- ======= START-MODAL =======-->
+		<div class="modal fade modal-ia" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					
+					<div class="modal-body position-relative">
+						<div class="d-flex justify-content-center align-items-center flex-column h-100">
+							<h4 id="modal-message" class="text-center text-white mb-5">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa deleniti animi nisi non voluptatibus enim, assumenda recusandae maxime quo.
+							</h4>
+							<div class="modal-buttons mt-3">
+								<button class="btn btn-info btn-maxia btn-sm mx-3">Não</button>
+								<button class="btn btn-secondary btn-maxia btn-sm mx-3">Sim</button>
+
+							</div>
+						</div>
+
+						<button type="button" class="btn-close position-absolute bottom-0 start-50 translate-middle-x" data-bs-dismiss="modal" aria-label="Close">
+							<img src="../../sources/assets/icons/bootstrap-icons/x-lg.svg" alt="" onload="SVGInject(this)" />
+						</button>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+
+		<!-- ======= START-BUTTON-MODAL =======-->
+			<!-- 
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+			Launch demo modal
+			</button> 
+			-->
+		<!-- ======= END-BUTTON-MODAL =======-->
+		<!-- ======= END-MODAL =======-->
+
+		<!-- ======= START-TOP-INFOS =======-->
+		<section class="test-time bg-primary pb-4 position-relative">
+			<!-- ======= START-CHRONOMETER =======-->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 mx-auto">
+						<div class="d-flex justify-content-center align-items-center flex-column py-4">
+							<span class="chronometer-icon">
+								<img src="../../sources/assets/icons/bootstrap-icons/stopwatch.svg" alt="" onload="SVGInject(this)" />
+							</span>
+							<span id="cronometro" class="chronometer-time text-center" data-time="chronometer">...</span>
+						</div>
+						<!-- ======= END-CHRONOMETER =======-->
+
+						<!-- ======= START-COLLAPSE =======-->
+						<div class="collapse" id="collapseExample">
+							<!-- ======= START-PROGESS-BAR =======-->
+							<div class="progress p-1 mb-3 rounded-pill">
+								<div
+									class="progress-bar rounded-pill bg-secondary"
+									role="progressbar"
+									style="width: 15%"
+									aria-valuenow="15"
+									aria-valuemin="0"
+									aria-valuemax="100"
+								></div>
+							</div>
+							<!-- ======= END-PROGESS-BAR =======-->
+
+							<!-- ======= START-CAROUSEL =======-->
+							<div id="carouselQuestions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+								<div class="carousel-inner px-3">
+									<!--
+										=======
+										A CADA 18 QUESTÕES CRIAR UM NOVO BLOCO DE LOOP
+
+										<div class="carousel-item" data-bs-interval="pause">
+											<div class="row">
+												<div class="col-2 d-flex justify-content-center">
+													<div class="question-item done">01</div>
+													<div class="question-item done">02</div>
+													**********************************ATÉ 18
+												</div>
+											</div>
+										</div>
+										=======
+									-->
+									<div class="carousel-item active" data-bs-interval="pause">
+										<div class="row">
+											<div class="col-2 d-flex justify-content-center">
+												<div class="question-item done" data-bs-target="#carouselPerguntas"
+												data-bs-slide-to="0">01</div>
+											</div>
+											<div class="col-2 d-flex justify-content-center">
+												<div class="question-item done" data-bs-target="#carouselPerguntas"
+												data-bs-slide-to="1">02</div>
+											</div>
+											<div class="col-2 d-flex justify-content-center">
+												<div class="question-item done" data-bs-target="#carouselPerguntas"
+												data-bs-slide-to="2">03</div>
+											</div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">04</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">05</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">06</div></div>
+
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+										</div>
+									</div>
+									<div class="carousel-item" data-bs-interval="pause">
+										<div class="row">
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+										</div>								
+									</div>
+									<div class="carousel-item" data-bs-interval="pause">
+										<div class="row">
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+										</div>								
+									</div>
+
+									<div class="carousel-item" data-bs-interval="pause">
+										<div class="row">
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+											<div class="col-2 d-flex justify-content-center"><div class="question-item">00</div></div>
+										</div>								
+									</div>
+								</div>
+								<div class="carousel-indicators position-static m-0 mt-5">
+									<button
+										type="button"
+										data-bs-target="#carouselQuestions"
+										data-bs-slide-to="0"
+										class="active"
+										aria-current="true"
+										aria-label="Slide 1"
+									></button>
+									<button
+										type="button"
+										data-bs-target="#carouselQuestions"
+										data-bs-slide-to="1"
+										aria-label="Slide 2"
+									></button>
+									<button
+										type="button"
+										data-bs-target="#carouselQuestions"
+										data-bs-slide-to="2"
+										aria-label="Slide 3"
+									></button>
+									<button
+										type="button"
+										data-bs-target="#carouselQuestions"
+										data-bs-slide-to="3"
+										aria-label="Slide 4"
+									></button>
+								</div>
+								<button
+									class="carousel-control-prev"
+									type="button"
+									data-bs-target="#carouselQuestions"
+									data-bs-slide="prev"
+								>
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Anterior</span>
+								</button>
+								<button
+									class="carousel-control-next"
+									type="button"
+									data-bs-target="#carouselQuestions"
+									data-bs-slide="next"
+								>
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Próximo</span>
+								</button>
+							</div>
+							<!-- ======= END-CAROUSEL =======-->
+
+							<!-- ======= START-BUTTONS =======-->
+							<div class="row mt-4">
+								<div class="question-buttons d-grid gap-2 col-md-10 mx-auto">
+									<button type="button" class="btn btn-info btn-maxia btn-sm mb-3">Ir para Redação</button>
+									<button type="button" class="btn btn-maxia outline-button-white btn-sm mb-3">Finalizar Avaliação</button>
+								</div>
+							</div>
+							<!-- ======= END-BUTTONS =======-->
+						</div>
+						<!-- ======= END-COLLAPSE =======-->
+
+						<!-- ======= START-ACTIVE-COLLAPSE =======-->
+						<button class="open-questions position-absolute top-100 start-50 translate-middle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+							<img src="../../sources/assets/icons/bootstrap-icons/chevron-down.svg" alt="" onload="SVGInject(this)" />
+						</button>
+						<!-- ======= END-ACTIVE-COLLAPSE =======-->
+					</div>
+				</div>
+			</div>
+		
+		</section>
+	<!-- ======= END-TOP-INFOS =======-->
+
+	<!-- ======= START-QUESTIONS =======-->
+	<section class="container pb-3">
+		<div class="row">
+			<div class="col-md-9 mx-auto px-3 pt-5 border rounded">
+				<!-- ======= START-CAROUSEL-PERGUNTAS =======-->
+				<div id="carouselPerguntas" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+					<div class="carousel-inner px-3">
+
+						<!-- ======= START-PERGUNTA-01 =======-->
+						<div class="carousel-item active" data-bs-interval="pause">
+							<!-- ======= PERGUNTA-01-TITLE =======-->
+							<h2 class="text-primary bold"><strong>Questão 01</strong></h2>
+							<hr class="dropdown-divider mb-3">
+
+							<!-- ======= PERGUNTA-01-TEXT =======-->
+							<div class="info-prova">
+								<p>O uso de bebidas alcoólicas é tão antigo quanto a própria humanidade. Beber moderada e esporadicamente faz parte dos hábitos de diversas sociedades. Determinar o limite entre o beber social, o uso abusivo ou nocivo de álcool e o alcoolismo (Síndrome de Dependência do Álcool) é difícil, pois são tênues as diferenças, variam de pessoa para pessoa e de cultura para cultura. Estima-se que cerca de 10% das mulheres e 20% dos homens façam uso abusivo do álcool; 5% das mulheres e 10% dos homens apresentam a Síndrome de Dependência do Álcool ou alcoolismo. Sabe-se também que o álcool está relacionado com 50% dos casos de morte em acidentes automobilísticos, 50% dos homicídios e 25% dos suicídios. Frequentemente pessoas portadoras de outras doenças mentais (ansiedade, pânico, fobias, depressão) apresentam também problemas relacionados ao uso de álcool.</p>
+
+								<p class="fonte-prova">Martins, O. A. Efeito do consumo de bebidas alcoólicas no organismo – Uma revisão. Revista Eletrônica de Educação e Ciência (REEC), ISSN 2237-3462, vol. 03, nº 02, 2013.</p>
+
+								<p>O fígado é o principal órgão responsável em metabolizar as substâncias tóxicas que são lançadas na corrente sanguínea. Os hepatócitos, células do fígado, são ricos em organelas especializadas em promover a quebra do álcool em substâncias menos nocivas à nossa saúde.</p>
+
+								<p class="fonte-prova">Martins, O. A. Efeito do consumo de bebidas alcoólicas no organismo – Uma revisão. Revista Eletrônica de Educação e Ciência (REEC), ISSN 2237-3462, vol. 03, nº 02, 2013.</p>
+							</div>
+
+							<hr class="dropdown-divider ">
+							<hr class="dropdown-divider mb-4">
+							<!-- ======= PERGUNTA-01-OPTIONS =======-->							
+							<div class="pergunta-prova">
+								<h5 class="text-primary bold mb-3">Nesse contexto, os hepatócitos são células ricas em:</h5>
+
+								<!-- ======= PERGUNTA-01-OPTIONS-A =======-->
+								<div class="d-flex align-items-center py-3 gap-2">									
+									<input class="btn-check" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+									<label class="btn radio-ia" for="flexRadioDefault1">A</label>
+									<label class="form-check-label" for="flexRadioDefault1">
+										Ribossomos e centríolos.
+									</label>
+								</div>
+
+								<!-- ======= PERGUNTA-01-OPTIONS-B =======-->
+								<div class="d-flex align-items-center py-3 gap-2">
+									<input class="btn-check" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+									<label class="btn radio-ia" for="flexRadioDefault2">B</label>
+									<label class="form-check-label" for="flexRadioDefault2">
+										Peroxissomos e retículos endoplasmáticos lisos.
+									</label>
+								</div>
+
+								<!-- ======= PERGUNTA-01-OPTIONS-C =======-->
+								<div class="d-flex align-items-center py-3 gap-2">
+									<input class="btn-check" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+									<label class="btn radio-ia" for="flexRadioDefault3">C</label>
+									<label class="form-check-label" for="flexRadioDefault3">
+										Retículos endoplasmáticos rugosos e complexos de Golgi.
+									</label>
+								</div>
+
+								<!-- ======= PERGUNTA-01-OPTIONS-D =======-->
+								<div class="d-flex align-items-center py-3 gap-2">
+									<input class="btn-check" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+									<label class="btn radio-ia" for="flexRadioDefault4">D</label>
+									<label class="form-check-label" for="flexRadioDefault4">
+										Retículos endoplasmáticos lisos e flagelos.
+									</label>
+								</div>
+
+								<!-- ======= PERGUNTA-01-OPTIONS-E =======-->
+								<div class="d-flex align-items-center py-3 gap-2">
+									<input class="btn-check" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+									<label class="btn radio-ia" for="flexRadioDefault5">E</label>
+									<label class="form-check-label" for="flexRadioDefault5">
+										Lisossomos e mitocôndrias.
+									</label>
+								</div>
+
+								<hr class="dropdown-divider mb-3">
+
+								<!-- ======= PERGUNTA-01-SALVAR =======-->
+								<div class="text-center mb-3">
+									<button type="button" class="btn btn-secondary btn-maxia mx-2">Salvar</button>
+								</div>
+
+								<hr class="dropdown-divider">
+							</div>
+						</div>
+						<!-- ======= END-PERGUNTA-01 =======-->
+
+						<!-- ======= START-PERGUNTA-02 =======-->
+						<div class="carousel-item" data-bs-interval="pause">
+							<!-- ======= PERGUNTA-02-TITLE =======-->
+							<h2 class="text-primary bold"><strong>Questão 02</strong></h2>
+							<hr class="dropdown-divider mb-3">
+
+							<!-- ======= PERGUNTA-02-TEXT =======-->
+							<div class="info-prova">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis laudantium obcaecati repellat similique, quas ad consequuntur assumenda beatae reprehenderit distinctio vero optio, eos quibusdam nam deserunt recusandae consequatur praesentium incidunt?
+								Quam tempore eos quis quae alias quibusdam, perspiciatis laudantium culpa beatae? Perferendis consectetur blanditiis voluptas repellat? Quibusdam non obcaecati, ipsam, ipsum hic totam ad at suscipit deserunt illum voluptas dolorem?</p>
+
+								<p class="fonte-prova">Fonte/Referencia Exemplo</p>							
+							</div>
+
+							<hr class="dropdown-divider ">
+							<hr class="dropdown-divider mb-4">
+							<!-- ======= PERGUNTA-02-OPTIONS =======-->							
+							<div class="pergunta-prova">
+								<h5 class="text-primary bold mb-3">Pergunta questão 02:</h5>				
+								
+								<!-- ======= PERGUNTA-02-OPTIONS-A =======-->
+								<div class="d-flex align-items-center py-3 gap-2">									
+									<input class="btn-check" type="radio" name="newradio" id="newradio1" />
+									<label class="btn radio-ia" for="newradio1">A</label>
+									<label class="form-check-label" for="newradio1">
+										Alternativa 01
+									</label>
+								</div>
+
+								<!-- ======= PERGUNTA-02-OPTIONS-B =======-->
+								<div class="d-flex align-items-center py-3 gap-2">
+									<input class="btn-check" type="radio" name="newradio" id="newradio2">
+									<label class="btn radio-ia" for="newradio2">B</label>
+									<label class="form-check-label" for="newradio2">
+										Alternativa 02
+									</label>
+								</div>
+
+								<!-- ======= PERGUNTA-02-OPTIONS-C =======-->
+								<div class="d-flex align-items-center py-3 gap-2">
+									<input class="btn-check" type="radio" name="newradio" id="newradio3">
+									<label class="btn radio-ia" for="newradio3">C</label>
+									<label class="form-check-label" for="newradio3">
+										Alternativa 03
+									</label>
+								</div>
+
+								<!-- ======= PERGUNTA-02-OPTIONS-D =======-->
+								<div class="d-flex align-items-center py-3 gap-2">
+									<input class="btn-check" type="radio" name="newradio" id="newradio4">
+									<label class="btn radio-ia" for="newradio4">D</label>
+
+									<label class="form-check-label" for="newradio4">
+										Alternativa 04
+									</label>
+								</div>
+
+								<!-- ======= PERGUNTA-02-OPTIONS-E =======-->
+								<div class="d-flex align-items-center py-3 gap-2">
+									<input class="btn-check" type="radio" name="newradio" id="newradio5">
+									<label class="btn radio-ia" for="newradio5">E</label>
+									<label class="form-check-label" for="newradio5">
+										Alternativa 05
+									</label>
+								</div>
+
+								<hr class="dropdown-divider mb-3">
+								<!-- ======= PERGUNTA-02-SALVAR =======-->
+								<div class="text-center mb-3">
+									<button type="button" class="btn btn-secondary btn-maxia mx-2">Salvar</button>
+								</div>
+
+								<hr class="dropdown-divider">
+							</div>
+						</div>
+						<!-- ======= END-PERGUNTA-02 =======-->
+
+						<!-- ======= START-PERGUNTA-03 =======-->
+						<div class="carousel-item" data-bs-interval="pause">
+							<!-- ======= PERGUNTA-03-TITLE =======-->
+							<h2 class="text-primary bold"><strong>Questão 03</strong></h2>
+							<hr class="dropdown-divider mb-3">
+
+							<!-- ======= PERGUNTA-03-TEXT =======-->
+							<div class="info-prova">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis laudantium obcaecati repellat similique, quas ad consequuntur assumenda beatae reprehenderit distinctio vero optio, eos quibusdam nam deserunt recusandae consequatur praesentium incidunt?
+								Quam tempore eos quis quae alias quibusdam, perspiciatis laudantium culpa beatae? Perferendis consectetur blanditiis voluptas repellat? Quibusdam non obcaecati, ipsam, ipsum hic totam ad at suscipit deserunt illum voluptas dolorem?</p>
+
+								<p class="fonte-prova">Fonte/Referencia Exemplo</p>							
+							</div>
+
+							<hr class="dropdown-divider ">
+							<hr class="dropdown-divider mb-4">
+							<!-- ======= PERGUNTA-03-OPTIONS =======-->							
+							<div class="pergunta-prova">
+								<h5 class="text-primary bold mb-3">Pergunta questão 02:</h5>				
+								
+								<!-- ======= PERGUNTA-03-OPTIONS-A =======-->
+								<div class="d-flex align-items-center py-3 gap-2">									
+									<input class="btn-check" type="radio" name="newradio" id="newradio1" />
+									<label class="btn radio-ia" for="newradio1">A</label>
+									<label class="form-check-label" for="newradio1">
+										Alternativa 01
+									</label>
+								</div>
+
+								<!-- ======= PERGUNTA-03-OPTIONS-B =======-->
+								<div class="d-flex align-items-center py-3 gap-2">
+									<input class="btn-check" type="radio" name="newradio" id="newradio2">
+									<label class="btn radio-ia" for="newradio2">B</label>
+									<label class="form-check-label" for="newradio2">
+										Alternativa 02
+									</label>
+								</div>
+
+								<!-- ======= PERGUNTA-03-OPTIONS-C =======-->
+								<div class="d-flex align-items-center py-3 gap-2">
+									<input class="btn-check" type="radio" name="newradio" id="newradio3">
+									<label class="btn radio-ia" for="newradio3">C</label>
+									<label class="form-check-label" for="newradio3">
+										Alternativa 03
+									</label>
+								</div>
+
+								<!-- ======= PERGUNTA-03-OPTIONS-D =======-->
+								<div class="d-flex align-items-center py-3 gap-2">
+									<input class="btn-check" type="radio" name="newradio" id="newradio4">
+									<label class="btn radio-ia" for="newradio4">D</label>
+
+									<label class="form-check-label" for="newradio4">
+										Alternativa 04
+									</label>
+								</div>
+
+								<!-- ======= PERGUNTA-03-OPTIONS-E =======-->
+								<div class="d-flex align-items-center py-3 gap-2">
+									<input class="btn-check" type="radio" name="newradio" id="newradio5">
+									<label class="btn radio-ia" for="newradio5">E</label>
+									<label class="form-check-label" for="newradio5">
+										Alternativa 05
+									</label>
+								</div>
+
+								<hr class="dropdown-divider mb-3">
+								<!-- ======= PERGUNTA-03-SALVAR =======-->
+								<div class="text-center mb-3">
+									<button type="button" class="btn btn-secondary btn-maxia mx-2">Salvar</button>
+								</div>
+
+								<hr class="dropdown-divider">
+							</div>
+						</div>
+						<!-- ======= END-PERGUNTA-03 =======-->
+					</div>					
+				</div>
+				<!-- ======= END-CAROUSEL-PERGUNTAS =======-->
+
+				<!-- ======= START-CAROUSEL-PERGUNTAS-NAV =======-->
+				<div class="question-nav position-relative">
+					<a class="carousel-control-prev arrow text-decoration-none position-static" type="button"
+					data-bs-target="#carouselPerguntas"
+					data-bs-slide="prev" href="#">
+						<img src="../../sources/assets/icons/bootstrap-icons/chevron-left.svg" alt="" onload="SVGInject(this)" />
+						Anterior			
+					</a>
+			
+					<a class="carousel-control-next arrow text-decoration-none position-static" type="button"
+					data-bs-target="#carouselPerguntas"
+					data-bs-slide="next" href="#">
+						Próximo
+						<img src="../../sources/assets/icons/bootstrap-icons/chevron-right.svg" alt="" onload="SVGInject(this)" />
+					</a>
+				</div>
+				<!-- ======= END-CAROUSEL-PERGUNTAS-NAV =======-->
+			</div>
+		</div>
+	</section>	
+	<!-- ======= END-QUESTIONS =======-->
+
+	<!-- ======= JS =======-->
+	<script src="../../sources/js/bootstrap.bundle.min.js"></script>
+	<script type="module" src="../../sources/js/script.js"></script>
+	</body>
+</html>

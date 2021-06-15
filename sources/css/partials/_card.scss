@@ -1,0 +1,63 @@
+.card-maxia {
+  position: relative;
+  display: flex;
+  background: $white;
+  border-radius: .7rem;
+  flex-direction: column;
+  border:none;
+  background-clip: border-box;
+
+  .card-header-maxia {
+    border-radius: .7rem .7rem 0 0;
+    padding: 1rem 0 0 1rem;
+    margin-bottom: 0;
+
+    hr {
+      background: $gray-1;
+      max-width: 95%;
+      margin: 0 !important;
+    }
+  }
+
+  
+}
+
+.list-maxia {
+  ul {
+    list-style: none;
+    li {
+      img {
+        margin-right: .6rem;
+      }
+    }
+  }
+}
+
+.card-maxia-disabled {
+  opacity: .4;
+
+  .card-header-maxia {
+    background: $gray-1;
+    color: $white;
+  }
+
+  .iniciado {
+    background: $black-1;
+  }
+
+  .desenvolvimento {
+    background: $pink-dark;
+  }
+
+  .esperado {
+    background: $purple-normal;
+  }
+
+  .superado {
+    background: $blue-dark;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}

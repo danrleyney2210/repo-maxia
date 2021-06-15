@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="../../sources/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../sources/css/style-ia.min.css" />
+
+		<script src="../../sources/js/svg-inject.min.js"></script>
+		<title>05 - Loading</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 mx-auto">
+					<div class="d-flex flex-column vh-100 w-100 justify-content-evenly">
+						<a class="logo-symbol text-center" href="#">
+							<img src="../../sources/assets/svg/logo-maxia-symbol.svg" alt="Logo Max.IA" style="height: 42px" />
+						</a>
+						<div id="load" class="px-4">
+							<p class="h3 text-center"><span class="counter" data-percent="0"></span>%</p>
+							<div class="progress mb-3 rounded-pill">
+								<div
+									class="progress-bar rounded-pill bg-secondary"
+									role="progressbar"
+									aria-valuenow="15"
+									aria-valuemin="0"
+									aria-valuemax="100"
+								></div>
+							</div>
+						</div>
+						<p class="display-6 text-primary fw-bold text-center text-uppercase">Processando...</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- ======= JS =======-->
+		<script src="../../sources/js/bootstrap.bundle.min.js"></script>
+		<script type="module" src="../../sources/js/script.js"></script>
+
+		<!-- ======= JS-PROVISORIO =======-->
+		<script>
+			function setProgress(e, percent) {
+				e.querySelector('.counter').setAttribute('data-percent', Math.round(percent));
+				e.querySelector('.counter').innerHTML = `${Math.round(percent)}`;
+				e.querySelector('.progress-bar').style = `transition: width 0.1s linear; width:${Math.round(percent)}%`;
+			}
+
+			(function () {
+				var e = document.querySelector('#load'),
+					percent = 0;
+				(function animate() {
+					setProgress(e, (percent += 1));
+					if (percent < 100) setTimeout(animate, 20);
+				})();
+			})();
+		</script>
+	</body>
+</html>

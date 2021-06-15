@@ -1,0 +1,18 @@
+// prova
+.info-prova {
+	.fonte-prova {
+		font-style: italic;
+		color: $gray-1;
+		text-align: right;
+	}
+}
+
+.question-nav {
+	.arrow {
+		color: $black-1;
+		svg {
+			width: 32px;
+			height: 32px;
+		}
+	}
+}

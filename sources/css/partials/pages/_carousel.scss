@@ -1,0 +1,109 @@
+#carouselQuestions {
+	.question-item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex: 1 0 42px;
+
+		width: 42px;
+		height: 42px;
+		border: 2px solid $white;
+		border-radius: 0.5rem;
+		margin-bottom: 8px;
+
+		font-size: 1.2rem;
+		font-weight: bold;
+		cursor: pointer;
+	}
+
+	.question-item.done {
+		background-color: $blue-normal;
+		border: 0;
+	}
+
+	//reset bootstrap
+	.carousel-control-prev,
+	.carousel-control-next {
+		top: inherit;
+	}
+}
+
+.open-questions {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	border: 4px solid $white;
+	border-radius: 50%;
+	background-color: $blue-normal;
+	color: $white;
+
+	svg {
+		width: 24px;
+		height: 24px;
+		transition: 0.7s ease;
+	}
+}
+
+.open-questions[aria-expanded='true'] svg {
+	transform: rotate(-180deg);
+}
+
+#carouselPerguntas + .question-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 1rem 0;
+
+	.arrow {
+		flex: 1;
+		font-size: 1.5rem;
+		margin: 0 0.5rem;
+		svg {
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+	}
+}
+
+#carouselPodcast {
+	height: 300px;
+	.carousel-item {
+		cursor: pointer;
+	}
+	.carousel-indicators {
+		button {
+			background: $gray-1;
+			width: 25px !important;
+			border-radius: 50%;
+		}	
+	}
+
+}
+
+#carouselDesafio {
+	.desafio-item {
+		cursor: pointer;
+	}
+
+	.carousel-inner {
+		height:310px
+	}
+
+	.carousel-control-prev, .carousel-control-next {		
+		height: 20px;
+		top: 270px;
+		margin-left: -20px;		
+	}
+
+	.carousel-indicators {		
+		button {	
+			background: $gray-1;
+			width: 20px !important;
+			height: 1px !important;
+			border-radius: 50%;
+		}	
+	}
+}

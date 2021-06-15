@@ -1,0 +1,276 @@
+// reset bootstrap
+.btn-secondary,
+.btn-info,
+.btn-outline-secondary:hover,
+.btn-outline-info:hover,
+.btn-outline-secondary:active,
+.btn-outline-secondary.active,
+.btn-outline-info:active,
+.btn-outline-info.active,
+.btn-check:checked + .btn-outline-secondary,
+.btn-check:checked + .btn-outline-info {
+	color: $white !important;
+}
+
+//maxia
+.btn-maxia {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	padding: 12px 24px;
+	font-weight: bold;
+	border-radius: 20px;
+	background-color: transparent;
+	border: 2px solid transparent;
+	min-width: 100px;
+}
+
+.outline-button-purple {
+	color: $purple-normal;
+	border-color: currentColor;
+
+	&:hover {
+		border-color: transparent;
+		color: $white;
+		background-color: $purple-normal;
+		box-shadow: 0px 6px 0px $purple-dark;
+		&::after {
+			border-color: $purple-normal;
+		}
+	}
+}
+
+.outline-button-blue {
+	color: $blue-normal;
+	border-color: currentColor;
+
+	&:hover {
+		border-color: transparent;
+		color: $white;
+		background-color: $blue-normal;
+		box-shadow: 0px 6px 0px $blue-dark;
+		&::after {
+			border-color: $blue-normal;
+		}
+	}
+}
+
+.outline-button-pink {
+	color: $pink-normal;
+	border-color: currentColor;
+
+	&:hover {
+		border-color: transparent;
+		color: $white;
+		background-color: $pink-normal;
+		box-shadow: 0px 6px 0px $pink-dark;
+		&::after {
+			border-color: $pink-normal;
+		}
+	}
+}
+
+.outline-button-white {
+	color: $white;
+	border-color: currentColor;
+
+	&:hover {
+		border-color: transparent;
+		color: #1a1a1a;
+		background-color: $white;
+		// box-shadow: 0px 6px 0px $purple-dark;
+		// &::after {
+		// 	// border-color: $purple-normal;
+		// }
+	}
+}
+
+.btn-info.btn-outline-maxia {
+	color: $pink-normal;
+	border-color: currentColor;
+}
+
+.btn-primary.btn-maxia {
+	background-color: $purple-normal;
+	box-shadow: 0px 6px 0px $purple-dark;
+	&::after {
+		border-color: $purple-normal;
+	}
+}
+
+.btn-secondary.btn-maxia {
+	background-color: $blue-normal;
+	box-shadow: 0px 6px 0px $blue-dark;
+	&::after {
+		border-color: $blue-normal;
+	}
+}
+
+.btn-info.btn-maxia {
+	background-color: $pink-normal;
+	box-shadow: 0px 6px 0px $pink-dark;
+	&::after {
+		border-color: $pink-normal;
+	}
+}
+
+.btn-disabled.btn-maxia {
+	color: $white;
+	background-color: $gray-1;
+	box-shadow: 0px 6px 0px $gray-3;
+}
+
+// BOTÕES OUTILINE
+.btn.btn-outline-white {
+	background: $white;
+}
+
+.btn-maxia.outline-primary {
+	border: 5px solid $purple-normal;
+	color: $purple-normal;
+	&:hover {
+		background: $purple-normal;
+		color: $white;
+	}
+}
+
+.btn-maxia.outline-secondary {
+	border: 5px solid $blue-normal;
+	color: $blue-normal;
+	&:hover {
+		background-color: $blue-normal;
+		color: $white;
+
+		svg {
+			color: $white;
+		}
+	}
+
+	svg {
+		color: $blue-normal;
+	}
+}
+
+.btn-maxia.outline-info {
+	border: 5px solid $pink-normal;
+	color: $pink-normal;
+	&:hover {
+		background-color: $pink-normal;
+		color: $white;
+	}
+}
+.mw-400 {
+	max-width: 400px;
+}
+
+.btn-desafio {
+	display: flex;
+	flex-direction: column;
+	border-radius: 0.4rem;
+	border: 2px solid $gray-1;
+	height: 48px;
+	width: 48px;
+	justify-content: center;
+	align-items: center;
+
+	span:nth-child(1) {
+		font-weight: bold;
+		font-size: 14px;
+		color: $gray-1;
+	}
+
+	span:nth-child(2) {
+		font-size: 10px;
+		color: $gray-1;
+	}
+}
+
+.btn-desafio.desafio-item.btn-desafio-rosa {
+	background: $pink-normal;
+	border: none;
+	span {
+		color: $white;
+		border: 2px solid $pink-normal;
+	}
+}
+
+.btn-desafio.desafio-item.btn-desafio-roxo {
+	background: $purple-normal;
+	border: none;
+	span {
+		color: $white;
+		border: 2px solid $purple-normal;
+	}
+}
+
+.btn-desafio.desafio-item.btn-desafio-azul {
+	background: $blue-normal;
+	border: none;
+	span {
+		color: $white;
+		border: 2px solid $blue-normal;
+	}
+}
+
+.legenda {
+	span {
+		height: 20px;
+		width: 20px;
+		margin-right: 5px;
+		border-radius: 3px;
+	}
+
+	.legenda-rosa {
+		background: $pink-normal;
+	}
+
+	.legenda-roxa {
+		background: $purple-normal;
+	}
+
+	.legenda-azul {
+		background: $blue-normal;
+	}
+	
+	.legenda-disponivel {
+		border: 2px solid $black-1;
+	}
+
+	p {
+		font-size: 1rem;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.section-aprendizagem {
+	border-radius: 1rem;
+	box-shadow: 0px 3px 15px $gray-1;
+	cursor: pointer;
+
+	:hover {
+		border-radius: 1rem;
+	}
+
+	.materia {
+		color: $black-1;
+	}
+	.section-notification {
+		img {
+			width: 20px;
+			margin-left: 5px;
+		}
+	}
+	.notification {
+		background: $pink-normal;
+		color: $white;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	}
+}

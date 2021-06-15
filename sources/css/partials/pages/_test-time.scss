@@ -1,0 +1,23 @@
+// test-time
+.test-time {
+	border-radius: 0 0 1rem 1rem;
+	color: $white;
+
+	.chronometer-icon {
+		svg {
+			width: 4rem;
+			height: 4rem;
+		}
+	}
+
+	.chronometer-time {
+		font-size: 2rem;
+		cursor: default;
+	}
+}
+
+.test-options {
+	span {
+		font-size: 2rem;
+	}
+}

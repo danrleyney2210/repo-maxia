@@ -1,0 +1,65 @@
+form {
+	.textarea-ia {
+		width: 100%;
+		border-radius: 10px;
+		resize: none;
+		height: 358px;
+		padding: 10px;
+		border: 1px solid $gray-1;
+		outline: none;
+
+		&::placeholder {
+			color: $gray-1;
+		}
+	}
+}
+
+.pergunta-prova {
+	.form-check-label {
+		cursor: pointer;
+	}
+
+	.radio-ia {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+		font-weight: bold;
+		color: $black-1;
+		border-color: $black-1;
+
+		&:hover {
+			color: $white;
+			background-color: $blue-normal;
+			border-color: $blue-normal;
+		}
+	}
+
+	.btn-check:checked + .radio-ia,
+	.btn-check:active + .radio-ia,
+	.radio-ia:active,
+	.radio-ia.active,
+	.radio-ia.dropdown-toggle.show {
+		color: $white;
+		background-color: $blue-normal;
+		border-color: $blue-normal;
+	}
+
+	.btn-check + .radio-ia.errada {
+		background: $pink-dark;
+		color: $white;
+		border: none;
+
+	}
+
+	.btn-check + .radio-ia.errada +.form-check-label {
+		color: $pink-dark !important;
+		text-decoration: dashed !important;
+	}
+
+	.btn-check:checked + .radio-ia + .form-check-label {
+		color: $blue-normal;
+	}
+}

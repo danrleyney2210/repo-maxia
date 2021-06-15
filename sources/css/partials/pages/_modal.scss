@@ -1,0 +1,38 @@
+// modal
+// reset bootstrap
+.modal-ia {
+	.modal-dialog {
+		margin: 0 auto !important;
+	}
+
+	.modal-content {
+		height: 100vh;
+		background: rgba(111, 34, 130, 0.7);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+	}
+
+	.btn-close {
+		width: 42px;
+		height: 42px;
+		margin-bottom: 1rem;
+		border-radius: 50%;
+		background-color: $pink-normal;
+		color: $white;
+		opacity: 1;
+		background: none;
+		background-color: $pink-normal;
+		box-shadow: 0 0 4px 1px $pink-light, 0 0 4px 2px $pink-light;
+		transition: 0.5s ease;
+
+		svg {
+			width: 1.5rem;
+			height: 1.5rem;
+		}
+
+		&:hover {
+			background-color: $pink-light;
+			box-shadow: 0 0 4px 1px $pink-normal, 0 0 4px 2px $pink-normal;
+		}
+	}
+}
